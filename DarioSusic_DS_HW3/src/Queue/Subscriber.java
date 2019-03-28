@@ -6,13 +6,11 @@ import java.util.List;
 public class Subscriber {
 	private List<String> topic = new ArrayList<String>();
 	private List<Message> message = new ArrayList<Message>();
+	
 	public List<String> getTopic() {
 		return topic;
 	}
-	public Subscriber(List<String> topic, List<Message> message) {
-		this.topic = topic;
-		this.message = message;
-	}
+	
 	public void setTopic(List<String> topic) {
 		this.topic = topic;
 	}

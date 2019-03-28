@@ -3,10 +3,14 @@ package Queue;
 public class Message {
 	private String text;
 	private String topic;
-	public Message(String text, String topic) {
-		this.text = text;
-		this.topic = topic;
-	}
+//	public Message(String text, String topic) {
+//		this.text = text;
+//		this.topic = topic;
+//	}
+//	
+//	public Message() {
+//		// TODO Auto-generated constructor stub
+//	}
 	public String getText() {
 		return text;
 	}

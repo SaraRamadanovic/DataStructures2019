@@ -1,73 +1,22 @@
 package Queue;
 
-public class Queue {
-	private String arr[];         // array to store queue elements
-	private int front;         // front points to front element in the queue
-	private int rear;          // rear points to last element in the queue
-	private int capacity;      // maximum capacity of the queue
-	private int count;         // current size of the queue
-	
-	// Constructor to initialize queue
-	Queue(int size)
-	{
-		arr = new String[size];
-		capacity = size;
-		front = 0;
-		rear = -1;
-		count = 0;
-	}
-	
-	// Utility function to remove front element from the queue
-	public void dequeue()
-	{
-		// check for queue underflow
-		if (isEmpty())
-		{
-			// TODO throw error for underflow
-		}
-		front = (front + 1) % capacity;
-		count--;
-	}
+import java.util.LinkedList;
 
-	// Utility function to add an item to the queue
-	public void enqueue(String item)
-	{
-		// check for queue overflow
-		if (isFull())
-		{
-			//TODO throw error for full array
-		}
-
-		rear = (rear + 1) % capacity;
-		arr[rear] = item;
-		count++;
-	}
-
-	// Utility function to return front element in the queue
-	public String peek()
-	{
-		if (isEmpty()) 
-		{
-			//TODO throw error for empty array
-		}
-		return arr[front];
-	}
-
-	// Utility function to return the size of the queue
-	public int size()
-	{
-		return count;
-	}
-
-	// Utility function to check if the queue is empty or not
-	public Boolean isEmpty()
-	{
-		return (size() == 0);
-	}
-
-	// Utility function to check if the queue is empty or not
-	public Boolean isFull()
-	{
-		return (size() == capacity);
-	}
+class Queue<E> {
+   private LinkedList<E> list = new LinkedList<E>();
+   public void enqueue(E item) {
+      list.addLast(item);
+   }
+   public E dequeue() {
+      return list.poll();
+   }
+   public boolean hasItems() {
+      return !list.isEmpty();
+   }
+   public int size() {
+      return list.size();
+   }
+   public void addItems(Queue<? extends E> q) {
+      while (q.hasItems()) list.addLast(q.dequeue());
+   }
 }
