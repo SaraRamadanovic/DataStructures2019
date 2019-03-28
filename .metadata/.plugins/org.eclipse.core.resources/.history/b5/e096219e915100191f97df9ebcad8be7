@@ -1,7 +1,7 @@
 package Queue;
 
-public class Queue {
-	private String arr[];         // array to store queue elements
+public class Queue<E> {
+	private int arr[];         // array to store queue elements
 	private int front;         // front points to front element in the queue
 	private int rear;          // rear points to last element in the queue
 	private int capacity;      // maximum capacity of the queue
@@ -10,7 +10,7 @@ public class Queue {
 	// Constructor to initialize queue
 	Queue(int size)
 	{
-		arr = new String[size];
+		arr = new int[size];
 		capacity = size;
 		front = 0;
 		rear = -1;
@@ -30,7 +30,7 @@ public class Queue {
 	}
 
 	// Utility function to add an item to the queue
-	public void enqueue(String item)
+	public void enqueue(int item)
 	{
 		// check for queue overflow
 		if (isFull())
@@ -44,7 +44,7 @@ public class Queue {
 	}
 
 	// Utility function to return front element in the queue
-	public String peek()
+	public int peek()
 	{
 		if (isEmpty()) 
 		{
