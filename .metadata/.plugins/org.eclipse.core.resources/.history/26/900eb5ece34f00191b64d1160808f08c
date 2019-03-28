@@ -1,0 +1,45 @@
+package Queue;
+
+import java.util.Iterator;
+import java.util.List;
+
+import linkedList.LinkedListIterator;
+
+public class System implements Iterable<E> {
+	private Queue newQueue;
+	List<Subscriber> newSubscriber;
+	
+	public void addSubscriber(Subscriber s) {
+		
+	}
+	
+	public void removeSubscriber(Subscriber s) {
+		
+	}
+	
+	public void addMessage(Message m) {
+		
+	}
+	
+	public void broadcastMessage(Message m) {
+		//TODO sends corresponding message to subscriber
+	}
+	
+	public void getMessagesSubscriberTopic(String topic, Subscriber subscriber) {
+		//TODO return message to subscriber
+	}
+	
+    @Override
+    public String toString() {
+        String list = "";
+        for (E el : this) {
+            list += el + ",";
+        }
+        return list;
+    }
+    
+    @Override
+    public Iterator<E> iterator() {
+        return new LinkedListIterator<>(this.first);
+    }
+}

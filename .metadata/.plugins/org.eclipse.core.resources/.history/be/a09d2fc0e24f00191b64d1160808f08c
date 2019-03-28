@@ -1,0 +1,28 @@
+package Queue;
+
+import java.util.List;
+
+public class System {
+	private Queue newQueue;
+	List<Subscriber> newSubscriber;
+	
+	public void addSubscriber(Subscriber s) {
+		
+	}
+	
+	public void removeSubscriber(Subscriber s) {
+		
+	}
+	
+	public void addMessage(Message m) {
+		
+	}
+	
+	public void broadcastMessage(Message m) {
+		
+	}
+	
+	public void getMessagesSubscriberTopic(String topic, Subscriber subscriber) {
+		
+	}
+}
