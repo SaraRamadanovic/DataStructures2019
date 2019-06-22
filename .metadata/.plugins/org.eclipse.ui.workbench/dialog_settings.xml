@@ -36,6 +36,8 @@
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Dario Susic\Desktop\quickSortHW.zip"/>
+			<item value="C:\Users\Dario Susic\Desktop\quickSort.zip"/>
 			<item value="C:\Users\Dario Susic\Downloads\lab2stacks.zip"/>
 			<item value="C:\Users\Dario Susic\Downloads\DarioLAB.zip"/>
 		</list>
@@ -44,6 +46,8 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Dario Susic\Desktop\quickSortHW.zip"/>
+			<item value="C:\Users\Dario Susic\Desktop\quickSort.zip"/>
 			<item value="C:\Users\Dario Susic\Desktop\DSLAB6.zip"/>
 			<item value="C:\Users\Dario Susic\Desktop\DSLAB5.zip"/>
 			<item value="C:\Users\Dario Susic\Desktop\DSHW.zip"/>
